@@ -1,0 +1,16 @@
+start
+scan one character at a time of infix expressio  from left to right.
+opstack=the empty stack
+Repeat till there is data in infix expression
+if scanned character is "(" then push it to opstack.
+if scanned character is operand then push it to poststack.
+if scanned character is operator then
+
+    while(precedence(opstack[otos])>precedence(scanned character)) then
+    pop and push it into poststack
+    otherwise
+    push scanned character into opstack.
+    if scanned character is ")" then
+    pop and push into poststack untill "(" is not found and ignore the both symbols.
+    pop and push into poststack untill the opstack is empty.
+    stop.
