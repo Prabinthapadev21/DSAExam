@@ -14,3 +14,19 @@ if scanned character is operator then
     pop and push into poststack untill "(" is not found and ignore the both symbols.
     pop and push into poststack untill the opstack is empty.
     stop.
+
+
+//
+start
+create a new node using malloc function
+struct *newnode =(node*) malloc(sizeof(newnode));
+Read item to be inserted lets say data.
+newnode->info=data;
+set next of newnode to null
+newnode->next=null;
+if(first==null)then
+set first=last=newnode and exit
+else
+set last->next=newnode;
+set last = newnode;
+end
