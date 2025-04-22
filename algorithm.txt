@@ -30,3 +30,61 @@ else
 set last->next=newnode;
 set last = newnode;
 end
+
+
+algorithm for circular queue
+
+for enqueue
+let front=-1,rear = -1,arr[size];
+
+void enqueue()
+{
+    if(rear=(rear+1)%size==front)
+    {
+        print "the queue is in overflow condition";
+    }
+    else
+    {
+        if(front==-1)
+        {
+            front=0;
+        }
+        rear=(rear+1)%size;
+        arr[rear]=value;
+        print "The enqueued element is arr[rear]";
+    }
+}
+
+void dequeue()
+{
+    if(front==-1)
+    {
+        print "The queue is empty";
+            }
+            else
+            {
+                print "The dequeued element is arr[front];
+                if(front==rear)
+                {
+                    front=rear=-1;
+                }
+                else
+                {
+                    front = (front+1)%size;
+                }
+            }
+}
+void display()
+{
+    if(front==-1)
+    {
+        print "The queue is empty";
+    }
+    else
+    {
+        for(i=front;i<=rear;i=(i+1)%size)
+        {
+            print "arr[i]";
+        }
+    }
+}
