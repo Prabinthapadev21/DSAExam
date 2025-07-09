@@ -88,3 +88,86 @@ void display()
         }
     }
 }
+
+// to add the first node in the linked list.
+
+struct node
+{
+    int data;
+    struct node *next;
+};
+
+int main()
+{
+    struct node * newnode=(struct node*)malloc(sizeof(struct node));
+
+    newnode->info=data;
+    newnode->next=null;
+}
+
+
+// to add the node at the end of the linked list.
+
+struct node{
+    int data;
+    struct node *next;
+};
+int main()
+{
+    struct node * firstnode = (struct node*)malloc(sizeof(struct node));
+    firstnode->info=data;
+    firstnode->next=null;
+
+    struct node * head = firstnode;
+    struct node * secondnode = (struct node*)malloc(sizeof(struct node));
+    secondnode->info=data;
+    secondnode->next=null;
+
+    firstnode->next=secondnode;
+
+    struct node * lastnode = (struct node*)malloc(sizeof(struct node));
+    lastnode->info=data;
+    lastnode->next=null;
+
+    while(temp->next!=null)
+    {
+        temp=temp->next;
+    }
+    temp->next=last;
+}
+
+// inserting the node at the given position
+
+// to add the node at the end of the linked list.
+
+struct node{
+    int info;
+    struct node *next;
+};
+int main()
+{
+    struct node * firstnode = (struct node*)malloc(sizeof(struct node));
+    firstnode->info=data;
+    firstnode->next=null;
+
+    struct node * head = firstnode;
+    struct node * secondnode = (struct node*)malloc(sizeof(struct node));
+    secondnode->info=data;
+    secondnode->next=null;
+
+    firstnode->next=secondnode;
+    print "Enter the position" let pos.
+
+    struct node * newnode = (struct node*)malloc(sizeof(struct node));
+    newnode->info=data;
+    newnode->next=null;
+    struct node *temp = head;
+    for(i=1;i<pos-1;i++)
+    {
+        if(temp==null)
+        {
+            print "opertaion cannot be performed";
+        }
+        temp=temp->next;
+    } 
+}
